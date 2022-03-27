@@ -20,5 +20,5 @@ class Flatmate:
         self.days_in_house = days_in_house
 
     def pays(self, bill, all_flatmates_sum_of_days):
-        weight = self.days_in_house / all_flatmates_sum_of_days
-        return bill.amount * weight
+        weight = float(self.days_in_house / all_flatmates_sum_of_days)
+        return bill * weight
